@@ -36,7 +36,7 @@ panel on the left:
 
 Delete existing table
 -- SQLBook: Code
--- Active: 1698674191041@@127.0.0.1@5432@postgres
+-- Active: 1711369665931@@127.0.0.1@5432@mikewu
 -- If the table already exists we can drop it:
 -- If it doesn't exist nothing happens
 -- System commands are in upper case and user defined
@@ -49,6 +49,7 @@ DROP TABLE IF EXISTS drivers;
 
 Create empty table from codebook
 -- SQLBook: Code
+-- Active: 1711369665931@@127.0.0.1@5432@mikewu@public
 -- Create empty TABLE called "drivers"
 -- This example has five arguments separated by a comma
 -- that contain the "column_name" and "column_type", respectively
@@ -76,7 +77,6 @@ INSERT INTO drivers  VALUES (4, 'Fernando Alonso', 'Spanish',32);
 INSERT INTO drivers  VALUES (3, 'Sebastian Vettel', 'German',91);
 
 INSERT INTO drivers  VALUES (2, 'Michael Schumacher', 'German',53);
-
 -- SQLBook: Markup
 <font size="5"> 
 
@@ -127,6 +127,7 @@ SELECT * FROM drivers;
 
 Subsetting rows
 -- SQLBook: Code
+-- Active: 1711369665931@@127.0.0.1@5432@postgres
 -- The WHERE command evaluates logical conditions to subset rows
 SELECT * FROM drivers
 WHERE nationality = 'German';
@@ -159,6 +160,7 @@ FROM drivers;
 
 Sort
 -- SQLBook: Code
+-- Active: 1711369665931@@127.0.0.1@5432@postgres
 -- Order in ascending order of victories
 -- Remember that * means that all columns are selected
 SELECT driver_name FROM drivers
